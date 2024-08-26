@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="contenido">
+        <!-- Primera columna -->
+        <section class="contenido--entrada">
+            <a href=""><img src="img/Alura.png" alt="logo de Alura"></a>
+            <!--  -->
+            <div class="contenido--entrada--caja">
+                <textarea class="contenido--entrada--caja--texto" type="text" id="entradaTexto" placeholder="Ingrese el texto aqui para Encriptar o Desencriptar"></textarea>
+            </div>
+            <div class="contenido--entrada--terminos">
+                <img src="img/exclamacion.png" alt="imagen signo de exclamación">
+                  <span> No adminte mayusculas y acentos</span>
+            </div>
+            <div class="contenido--entrada--botones">
+                <button type="button" id="" class="contenido--entrada--botones--encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="" class="contenido--entrada--botones--desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <!-- Swegunda Columna -->
+        <aside class="contenido--salida">
+             <!-- Imagen y texto centrado -->
+            <!-- <div id="placeholder" class="contenido--salida--placeholder"> -->
+            <div id="placeholder" class="contenido--salida--inicio">
+                <img src="img/Muñeco.png" alt="imagen Alura" class="contenido--salida--inicio--imagen">
+                <p class="contenido--salida--inicio--texto"><b>Ningun mensaje fue encontrado</b></p>
+                <span >Ingresa el texto que desees encriptar o desencriptar.</span>
+            </div>
+            <!-- Área de texto para el resultado -->
+            <textarea id="resultado" class="contenido--salida--resultado" readonly></textarea>
+            
+            <!-- Botón de copiar debajo del resultado -->
+            <button type="button" id="btnCopiar" class="contenido--salida--copiar" onclick="copiar()">Copiar</button>
+        </aside>
+    </main>
+    <footer class="footer">
+        <script src="app.js"></script>
+        <span><b>Challenge Encriptador de Texto - DVM </b></span>
+    </footer>
+</body>
+</html>
